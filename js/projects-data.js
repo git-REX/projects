@@ -1,0 +1,277 @@
+// Projects data - This file defines all project information
+const projectsData = {
+  "smart-home-automation": {
+    id: "smart-home-automation",
+    title: "Smart Home Automation System",
+    description: "IoT-based home automation using ESP32, sensors, and mobile app control with real-time monitoring.",
+    fullDescription:
+      "A comprehensive IoT-based home automation system that allows users to control and monitor their home appliances remotely through a mobile application. The system integrates multiple sensors, actuators, and communication protocols to create a seamless smart home experience.",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop",
+    category: "IoT & Embedded Systems",
+    date: "2024",
+    duration: "6 months",
+    tags: ["ESP32", "IoT", "Mobile App", "Sensors"],
+    featured: true,
+    overview:
+      "This project demonstrates the implementation of a complete smart home ecosystem using ESP32 microcontrollers, various sensors, and a custom mobile application. The system provides real-time monitoring and control capabilities for lighting, temperature, security, and energy management.",
+    features: [
+      "Remote control of lights, fans, and appliances",
+      "Real-time temperature and humidity monitoring",
+      "Motion detection and security alerts",
+      "Energy consumption tracking",
+      "Voice control integration",
+      "Automated scheduling and scenes",
+    ],
+    technologies: [
+      { name: "ESP32", description: "Main microcontroller for IoT connectivity" },
+      { name: "React Native", description: "Cross-platform mobile application" },
+      { name: "MQTT", description: "Lightweight messaging protocol" },
+      { name: "Firebase", description: "Real-time database and authentication" },
+      { name: "DHT22", description: "Temperature and humidity sensor" },
+      { name: "PIR Sensor", description: "Motion detection" },
+    ],
+    challenges: [
+      "Ensuring reliable WiFi connectivity across different network conditions",
+      "Implementing secure communication between devices and mobile app",
+      "Optimizing power consumption for battery-powered sensors",
+      "Creating an intuitive user interface for non-technical users",
+    ],
+    results: [
+      "Successfully controlled 12+ home appliances remotely",
+      "Achieved 99.2% uptime for the system",
+      "Reduced energy consumption by 23% through automated scheduling",
+      "Positive feedback from 15+ beta testers",
+    ],
+    links: {
+      github: "https://github.com/username/smart-home-automation",
+      demo: "https://smart-home-demo.vercel.app",
+      documentation: "https://docs.smart-home-project.com",
+    },
+  },
+  "solar-mppt-controller": {
+    id: "solar-mppt-controller",
+    title: "Solar MPPT Charge Controller",
+    description: "Maximum Power Point Tracking controller for solar panels with 95% efficiency and LCD display.",
+    fullDescription:
+      "A high-efficiency Maximum Power Point Tracking (MPPT) charge controller designed for solar photovoltaic systems. The controller optimizes power extraction from solar panels and safely charges battery banks with advanced protection features.",
+    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&h=400&fit=crop",
+    category: "Power Electronics",
+    date: "2023",
+    duration: "4 months",
+    tags: ["Solar", "MPPT", "Power Electronics", "Microcontroller"],
+    featured: true,
+    overview:
+      "This project focuses on developing an efficient MPPT charge controller that maximizes power extraction from solar panels while providing comprehensive battery management and protection features. The system achieves 95%+ efficiency and includes real-time monitoring capabilities.",
+    features: [
+      "Maximum Power Point Tracking algorithm",
+      "95%+ conversion efficiency",
+      "LCD display for real-time monitoring",
+      "Battery overcharge/discharge protection",
+      "Temperature compensation",
+      "Data logging capabilities",
+    ],
+    technologies: [
+      { name: "Arduino Mega", description: "Main control unit" },
+      { name: "Buck Converter", description: "DC-DC power conversion" },
+      { name: "Current Sensors", description: "ACS712 for current measurement" },
+      { name: "Voltage Dividers", description: "Voltage sensing circuits" },
+      { name: "LCD Display", description: "16x2 character display" },
+      { name: "MOSFET Drivers", description: "High-side gate drivers" },
+    ],
+    challenges: [
+      "Implementing efficient MPPT algorithm for varying weather conditions",
+      "Designing robust power electronics circuits",
+      "Ensuring accurate current and voltage measurements",
+      "Managing heat dissipation in high-power applications",
+    ],
+    results: [
+      "Achieved 95.3% peak efficiency",
+      "Successfully tracked MPP under various irradiance conditions",
+      "Implemented comprehensive battery protection",
+      "Reduced charging time by 18% compared to PWM controllers",
+    ],
+    links: {
+      github: "https://github.com/username/solar-mppt-controller",
+      documentation: "https://mppt-controller-docs.com",
+    },
+  },
+  "wireless-power-transfer": {
+    id: "wireless-power-transfer",
+    title: "Wireless Power Transfer System",
+    description: "Inductive power transfer system for electric vehicle charging with safety mechanisms.",
+    fullDescription:
+      "An innovative wireless power transfer system designed for electric vehicle charging applications using inductive coupling technology with advanced safety and efficiency features.",
+    image: "https://images.unsplash.com/photo-1593941707882-a5bac6861d75?w=600&h=400&fit=crop",
+    category: "Power Systems",
+    date: "2023",
+    duration: "5 months",
+    tags: ["Wireless", "Power Transfer", "EV Charging", "Inductive"],
+    featured: false,
+    overview:
+      "This project explores wireless power transfer technology for electric vehicle charging, implementing inductive coupling with high efficiency and safety standards.",
+    features: [
+      "Inductive power transfer up to 3.3kW",
+      "85%+ power transfer efficiency",
+      "Foreign object detection",
+      "Automatic alignment assistance",
+      "Safety shutdown mechanisms",
+      "Real-time monitoring system",
+    ],
+    technologies: [
+      { name: "Resonant Circuits", description: "High-frequency resonant coupling" },
+      { name: "Power Electronics", description: "High-frequency inverters and rectifiers" },
+      { name: "Coil Design", description: "Optimized transmitter and receiver coils" },
+      { name: "Control Systems", description: "Feedback control for power regulation" },
+    ],
+    challenges: [
+      "Achieving high efficiency over air gap variations",
+      "Implementing robust foreign object detection",
+      "Managing electromagnetic interference",
+      "Ensuring safety compliance for EV charging",
+    ],
+    results: [
+      "Achieved 85% power transfer efficiency",
+      "Successfully demonstrated 3.3kW power transfer",
+      "Implemented comprehensive safety features",
+      "Reduced charging cable dependency",
+    ],
+    links: {
+      github: "https://github.com/username/wireless-power-transfer",
+    },
+  },
+  "motor-speed-controller": {
+    id: "motor-speed-controller",
+    title: "DC Motor Speed Controller",
+    description: "PWM-based speed controller with PID feedback control and regenerative braking.",
+    fullDescription:
+      "An advanced DC motor speed controller featuring PWM control, PID feedback, and regenerative braking capabilities for precise motor control applications.",
+    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop",
+    category: "Control Systems",
+    date: "2023",
+    duration: "3 months",
+    tags: ["Motor Control", "PWM", "PID", "Feedback Control"],
+    featured: false,
+    overview:
+      "This project implements a sophisticated DC motor speed controller with advanced features including PID control, regenerative braking, and comprehensive protection mechanisms.",
+    features: [
+      "PWM-based speed control",
+      "PID feedback control system",
+      "Regenerative braking capability",
+      "Current limiting protection",
+      "Speed ramping control",
+      "Digital display interface",
+    ],
+    technologies: [
+      { name: "Microcontroller", description: "Arduino-based control system" },
+      { name: "H-Bridge", description: "Motor driver circuit" },
+      { name: "Encoder", description: "Speed feedback sensor" },
+      { name: "Current Sensor", description: "Motor current monitoring" },
+    ],
+    challenges: [
+      "Tuning PID parameters for optimal response",
+      "Implementing smooth regenerative braking",
+      "Managing motor current spikes",
+      "Achieving precise speed control across load variations",
+    ],
+    results: [
+      "Achieved ±1% speed accuracy",
+      "Implemented smooth acceleration/deceleration",
+      "Reduced energy consumption by 15% with regenerative braking",
+      "Demonstrated stable operation under varying loads",
+    ],
+    links: {
+      github: "https://github.com/username/motor-speed-controller",
+    },
+  },
+  "power-quality-analyzer": {
+    id: "power-quality-analyzer",
+    title: "Power Quality Analyzer",
+    description: "Real-time power quality monitoring system with harmonic analysis and data logging.",
+    fullDescription:
+      "A comprehensive power quality monitoring system that analyzes electrical parameters, detects power quality issues, and provides detailed harmonic analysis with data logging capabilities.",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+    category: "Power Systems",
+    date: "2022",
+    duration: "4 months",
+    tags: ["Power Quality", "Harmonics", "Data Logging", "Analysis"],
+    featured: false,
+    overview:
+      "This project develops a real-time power quality analyzer capable of monitoring various electrical parameters, detecting power quality disturbances, and performing harmonic analysis for industrial applications.",
+    features: [
+      "Real-time voltage and current monitoring",
+      "Harmonic analysis up to 50th order",
+      "Power quality event detection",
+      "Data logging and trending",
+      "Alarm and notification system",
+      "Web-based monitoring interface",
+    ],
+    technologies: [
+      { name: "ADC Sampling", description: "High-speed analog-to-digital conversion" },
+      { name: "FFT Analysis", description: "Fast Fourier Transform for harmonic analysis" },
+      { name: "Database", description: "Time-series data storage" },
+      { name: "Web Interface", description: "Real-time monitoring dashboard" },
+    ],
+    challenges: [
+      "Achieving accurate high-frequency sampling",
+      "Implementing real-time FFT analysis",
+      "Managing large amounts of continuous data",
+      "Developing intuitive user interface for complex data",
+    ],
+    results: [
+      "Successfully monitored power quality parameters",
+      "Detected and classified power quality events",
+      "Provided detailed harmonic analysis reports",
+      "Enabled predictive maintenance strategies",
+    ],
+    links: {
+      github: "https://github.com/username/power-quality-analyzer",
+    },
+  },
+  "smart-grid-simulator": {
+    id: "smart-grid-simulator",
+    title: "Smart Grid Simulation",
+    description: "MATLAB/Simulink model of smart grid with renewable energy integration and load balancing.",
+    fullDescription:
+      "A comprehensive smart grid simulation model developed in MATLAB/Simulink featuring renewable energy integration, demand response, and intelligent load balancing algorithms.",
+    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&h=400&fit=crop",
+    category: "Smart Grid",
+    date: "2022",
+    duration: "6 months",
+    tags: ["Smart Grid", "MATLAB", "Simulation", "Renewable Energy"],
+    featured: false,
+    overview:
+      "This project creates a detailed simulation model of a smart grid system incorporating renewable energy sources, energy storage, and intelligent control algorithms for optimal grid operation.",
+    features: [
+      "Renewable energy source modeling",
+      "Energy storage system integration",
+      "Demand response algorithms",
+      "Load forecasting capabilities",
+      "Grid stability analysis",
+      "Economic dispatch optimization",
+    ],
+    technologies: [
+      { name: "MATLAB/Simulink", description: "Simulation environment" },
+      { name: "Power System Toolbox", description: "Electrical system modeling" },
+      { name: "Optimization Algorithms", description: "Grid operation optimization" },
+      { name: "Data Analytics", description: "Load pattern analysis" },
+    ],
+    challenges: [
+      "Modeling complex renewable energy variability",
+      "Implementing realistic load patterns",
+      "Balancing grid stability with renewable integration",
+      "Optimizing multiple conflicting objectives",
+    ],
+    results: [
+      "Successfully modeled complete smart grid system",
+      "Demonstrated 30% renewable energy integration",
+      "Achieved improved grid stability metrics",
+      "Validated demand response effectiveness",
+    ],
+    links: {
+      github: "https://github.com/username/smart-grid-simulator",
+    },
+  },
+}
+
+// Convert to array for easier iteration
+const projects = Object.values(projectsData)

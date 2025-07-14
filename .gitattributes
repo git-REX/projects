@@ -1,0 +1,14 @@
+# Override GitHub language detection
+*.html linguist-detectable=true
+*.css linguist-detectable=true  
+*.js linguist-detectable=true
+*.ts linguist-detectable=false
+*.tsx linguist-detectable=false
+
+# Set primary language
+*.html linguist-language=HTML
+*.css linguist-language=CSS
+*.js linguist-language=JavaScript
+
+# Exclude certain files from language detection
+README.md linguist-documentation
